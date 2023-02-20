@@ -1,12 +1,13 @@
 import { FC, ReactNode } from 'react'
 
-import { Fira_Code } from '@next/font/google'
+import { Inter } from '@next/font/google'
 
-import '@/styles/globals.css'
+import '@styles/globals.css'
 
-const font = Fira_Code({
-	weight: [ '400', '600' ],
-	subsets: [ 'latin', 'cyrillic' ]
+const font = Inter({
+	weight: [ '400', '500', '600' ],
+	subsets: [ 'latin', 'cyrillic' ],
+	variable: '--font-inter'
 })
 
 interface IProps {
@@ -20,7 +21,7 @@ const RootLayout: FC<IProps> = ({
 		<html lang='en'>
 		{/*<head />*/ }
 		<body
-			className={ font.className }
+			className={ `${ font.className } font-sans` }
 		>
 		{ children }
 		</body>

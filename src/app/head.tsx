@@ -1,6 +1,6 @@
 import { FC, Fragment } from 'react'
 
-const head: FC = () => {
+const Head: FC = () => {
 	return (
 		<Fragment>
 			<title>Webtronics - Front-End Developer Courses</title>
@@ -10,10 +10,11 @@ const head: FC = () => {
 			/>
 			<link
 				rel='icon'
-				href='/favicon.ico'
+				type='image/svg+xml'
+				href='/favicon.svg'
 			/>
 		</Fragment>
 	)
 }
 
-export default head
+export default Head

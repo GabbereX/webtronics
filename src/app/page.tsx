@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 const Main: FC = () => {
 	return (
-		<div>
+		<div className='bg-blue-80 text-white'>
 			<h1>
 				Main Page
 			</h1>

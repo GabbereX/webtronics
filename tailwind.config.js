@@ -11,10 +11,20 @@ module.exports = {
 	mode: 'jit',
 	theme: {
 		extend: {
-			// colors: {
-			// 	'primary-black': '#1A232E',
-			// 	'secondary-white': '#c7c7c7'
-			// },
+			colors: {
+				'blue-10': '#A2CBFB',
+				'blue-20': '#3B48D0',
+				'blue-30': '#0A1482',
+				'blue-80': '#0A1482',
+				'red': '#FD4646',
+				'gray-5': 'rgba(255, 255, 255, 0.05)',
+				'gray-20': '#636363'
+			},
+			backgroundImage: {
+				'gradient-1': 'linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%)',
+				'gradient-2': 'linear-gradient(180deg, #1FF2FF 0%, #27F9E5 52.66%, #2FFFCD 100%)',
+				'gradient-3': 'linear-gradient(90deg, rgba(21, 191, 253, 0) 8.03%, rgba(21, 191, 253, 0.7) 69.15%, rgba(156, 55, 253, 0.7) 97.95%)'
+			},
 			fontSize: {
 				h1: [ '9.375rem', '11.25rem' ],
 				h2: [ '4.5rem', '5.4rem' ],
@@ -22,13 +32,13 @@ module.exports = {
 				sm: [ '0.875rem', '1.225rem' ]
 			},
 			lineHeight: {
-				['7x']: '1.8rem',
-				['5x']: '1.4rem'
+				'7x': '1.8rem',
+				'5x': '1.4rem'
 			},
 			fontFamily: {
 				inter: [ 'var(--font-inter)', ...fontFamily.sans ],
 				roboto: [ 'var(--font-roboto)', ...fontFamily.sans ],
-				['clash-display']: [ 'var(--font-clash-display)', ...fontFamily.sans ]
+				'clash-display': [ 'var(--font-clash-display)', ...fontFamily.sans ]
 			}
 			// transitionTimingFunction: {
 			// 	'out-flex': 'cubic-bezier(0.05, 0.6, 0.4, 0.9)'

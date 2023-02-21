@@ -57,7 +57,7 @@ const fontsSet = `
 	${ inter.variable } 
 	${ clashDisplay.variable } 
 	${ roboto.variable } 
-	font-inter
+	font-inter leading-5x
 `
 
 interface IProps {

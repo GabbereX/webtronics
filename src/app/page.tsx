@@ -3,15 +3,20 @@ import { FC } from 'react'
 const Main: FC = () => {
 	return (
 		<div>
-			<div className='font-clash-display'>
+			<h1>
 				Main Page
-			</div>
-			<div className='font-inter'>
+			</h1>
+			<h2>
 				Main Page
-			</div>
-			<div className='font-roboto'>
+			</h2>
+			<h3>
 				Main Page
-			</div>
+			</h3>
+			<h4>
+				Main Page
+			</h4>
+			<div>Main Page</div>
+			<div className='text-sm'>Main Page</div>
 		</div>
 	)
 }

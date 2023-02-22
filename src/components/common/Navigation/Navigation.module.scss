@@ -1,0 +1,15 @@
+.link {
+
+	&::after {
+		content: '';
+		@apply
+		absolute right-0 bottom-[-3px]
+		h-[2px] w-0
+		bg-white
+		transition-[width];
+	}
+
+	&:hover::after {
+		@apply w-full left-0;
+	}
+}

@@ -10,12 +10,22 @@ module.exports = {
 	],
 	mode: 'jit',
 	theme: {
+		transitionDuration: {
+			DEFAULT: '300ms'
+		},
 		extend: {
+			container: {
+				center: true,
+				padding: '3.125rem',
+				screens: {
+					'2xl': '1324px'
+				}
+			},
 			colors: {
 				'blue-10': '#A2CBFB',
 				'blue-20': '#3B48D0',
 				'blue-30': '#0A1482',
-				'blue-80': '#0A1482',
+				'blue-80': '#0C102D',
 				'red': '#FD4646',
 				'gray-5': 'rgba(255, 255, 255, 0.05)',
 				'gray-20': '#636363'
@@ -23,7 +33,9 @@ module.exports = {
 			backgroundImage: {
 				'gradient-1': 'linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%)',
 				'gradient-2': 'linear-gradient(180deg, #1FF2FF 0%, #27F9E5 52.66%, #2FFFCD 100%)',
-				'gradient-3': 'linear-gradient(90deg, rgba(21, 191, 253, 0) 8.03%, rgba(21, 191, 253, 0.7) 69.15%, rgba(156, 55, 253, 0.7) 97.95%)'
+				'gradient-3': 'linear-gradient(90deg, rgba(21, 191, 253, 0) 8.03%, rgba(21, 191, 253, 0.7) 69.15%, rgba(156, 55, 253, 0.7) 97.95%)',
+				'gradient-4': 'linear-gradient(180deg, rgba(12, 16, 45, 0) -4.71%, #0C102D 97.38%)'
+				// 'hero': url('/img/hero.png')
 			},
 			fontSize: {
 				h1: [ '9.375rem', '11.25rem' ],
@@ -39,6 +51,9 @@ module.exports = {
 				inter: [ 'var(--font-inter)', ...fontFamily.sans ],
 				roboto: [ 'var(--font-roboto)', ...fontFamily.sans ],
 				'clash-display': [ 'var(--font-clash-display)', ...fontFamily.sans ]
+			},
+			dropShadow: {
+				white: '0 0 3px rgba(255, 255, 255, 1)'
 			}
 			// transitionTimingFunction: {
 			// 	'out-flex': 'cubic-bezier(0.05, 0.6, 0.4, 0.9)'

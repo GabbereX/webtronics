@@ -1,4 +1,4 @@
-import '@styles/globals.css'
+import '@styles/globals.scss'
 
 import { FC, ReactNode } from 'react'
 
@@ -53,11 +53,12 @@ const clashDisplay = localFont({
 	variable: '--font-clash-display'
 })
 
-const fontsSet = `
+const bodyClasses = `
 	${ inter.variable } 
 	${ clashDisplay.variable } 
 	${ roboto.variable } 
-	font-inter leading-5x
+	font-inter leading-5x text-white
+	bg-blue-80
 `
 
 interface IProps {
@@ -69,7 +70,7 @@ const RootLayout: FC<IProps> = ({
 }) => {
 	return (
 		<html lang='en'>
-		<body className={ fontsSet }>
+		<body className={ bodyClasses }>
 		{ children }
 		</body>
 		</html>

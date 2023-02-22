@@ -1,23 +1,12 @@
-import { FC } from 'react'
+import { FC, Fragment } from 'react'
+
+import { Header } from '@sections/Header'
 
 const Main: FC = () => {
 	return (
-		<div className='bg-blue-80 text-white'>
-			<h1>
-				Main Page
-			</h1>
-			<h2>
-				Main Page
-			</h2>
-			<h3>
-				Main Page
-			</h3>
-			<h4>
-				Main Page
-			</h4>
-			<div>Main Page</div>
-			<div className='text-sm'>Main Page</div>
-		</div>
+		<Fragment>
+			<Header />
+		</Fragment>
 	)
 }
 

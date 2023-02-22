@@ -43,6 +43,9 @@
       ],
       "@utils/*": [
         "utils/*"
+      ],
+      "@interfaces/*": [
+        "interfaces/*"
       ]
     },
     "plugins": [
@@ -52,7 +55,7 @@
     ]
   },
   "include": [
-    "next-env.d.ts",
+    "src/interfaces/next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"

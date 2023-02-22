@@ -1,0 +1,51 @@
+@tailwind base;
+
+h1, h2, h3, h4, h5, h6 {
+	@apply font-clash-display;
+}
+
+h1, h2, h3 {
+	@apply font-semibold;
+}
+
+h4, h5, h6 {
+	@apply font-medium;
+}
+
+h1 {
+	@apply text-h1;
+}
+
+h2 {
+	@apply text-h2;
+}
+
+h3 {
+	@apply text-h3;
+}
+
+h4 {
+	@apply text-2xl leading-7x;
+}
+
+body {
+	min-height: 1000vh;
+
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 815px;
+		width: 100%;
+		background-image: linear-gradient(180deg, rgba(12, 16, 45, 0) -4.71%, #0C102D 97.38%),
+		url(../../public/images/hero.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		z-index: -1;
+	}
+}
+
+@tailwind components;
+@tailwind utilities;

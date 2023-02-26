@@ -21,6 +21,9 @@ module.exports = {
 					'2xl': '1324px'
 				}
 			},
+			spacing: {
+				'19': '4.6875rem'
+			},
 			colors: {
 				'blue-10': '#A2CBFB',
 				'blue-20': '#3B48D0',
@@ -33,12 +36,11 @@ module.exports = {
 			backgroundImage: {
 				'gradient-1': 'linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%)',
 				'gradient-2': 'linear-gradient(180deg, #1FF2FF 0%, #27F9E5 52.66%, #2FFFCD 100%)',
-				'gradient-3': 'linear-gradient(90deg, rgba(21, 191, 253, 0) 8.03%, rgba(21, 191, 253, 0.7) 69.15%, rgba(156, 55, 253, 0.7) 97.95%)',
-				'gradient-4': 'linear-gradient(180deg, rgba(12, 16, 45, 0) -4.71%, #0C102D 97.38%)'
-				// 'hero': url('/img/hero.png')
+				'gradient-3': 'linear-gradient(90deg, rgba(21, 191, 253, 0) 8.03%, rgba(21, 191, 253, 0.7) 69.15%, rgba(156, 55, 253, 0.7) 97.95%)'
 			},
 			fontSize: {
-				h1: [ '9.375rem', '11.25rem' ],
+				// h1: [ '9.375rem', '11.25rem' ],
+				h1: [ '7.8125vi', '9.375vi' ],
 				h2: [ '4.5rem', '5.4rem' ],
 				h3: [ '2rem', '2.4rem' ],
 				sm: [ '0.875rem', '1.225rem' ]
@@ -55,9 +57,6 @@ module.exports = {
 			dropShadow: {
 				white: '0 0 3px rgba(255, 255, 255, 1)'
 			}
-			// transitionTimingFunction: {
-			// 	'out-flex': 'cubic-bezier(0.05, 0.6, 0.4, 0.9)'
-			// }
 		}
 	},
 	plugins: []

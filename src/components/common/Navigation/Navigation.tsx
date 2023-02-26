@@ -11,6 +11,7 @@ export const Navigation: FC = () => {
 				{
 					navigationLinks.map(({ value, link }) => (
 						<li
+							key={ value }
 							className='
 								[&:not(:last-child)]:mr-12
 							'

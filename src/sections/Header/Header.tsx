@@ -6,8 +6,8 @@ import { Navigation } from '@components/common/Navigation'
 
 export const Header: FC = () => {
 	return (
-		<header className='py-10'>
-			<Container>
+		<header>
+			<Container paddingY='py-10'>
 				<div className='flex justify-between'>
 					<Logo />
 					<Navigation />

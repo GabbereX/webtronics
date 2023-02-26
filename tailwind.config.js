@@ -22,7 +22,9 @@ module.exports = {
 				}
 			},
 			spacing: {
-				'19': '4.6875rem'
+				'19': '4.6875rem',
+				'45': '11.25rem',
+				'45-vw': '11.25vw'
 			},
 			colors: {
 				'blue-10': '#A2CBFB',
@@ -39,10 +41,11 @@ module.exports = {
 				'gradient-3': 'linear-gradient(90deg, rgba(21, 191, 253, 0) 8.03%, rgba(21, 191, 253, 0.7) 69.15%, rgba(156, 55, 253, 0.7) 97.95%)'
 			},
 			fontSize: {
-				// h1: [ '9.375rem', '11.25rem' ],
-				h1: [ '7.8125vi', '9.375vi' ],
+				h1: [ '9.375rem', '11.25rem' ],
+				'h1-vw': [ '10.375vw', '12.25vw' ],
 				h2: [ '4.5rem', '5.4rem' ],
 				h3: [ '2rem', '2.4rem' ],
+				'h3-vw': [ '3vw', '3.4vw' ],
 				sm: [ '0.875rem', '1.225rem' ]
 			},
 			lineHeight: {
@@ -61,3 +64,5 @@ module.exports = {
 	},
 	plugins: []
 }
+
+// 11.7279vw

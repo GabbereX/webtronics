@@ -64,5 +64,3 @@ module.exports = {
 	},
 	plugins: []
 }
-
-// 11.7279vw

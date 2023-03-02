@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-export const Logo: FC = () => {
+export const LogoSVG: FC = () => {
 	return (
 		<svg
 			width='169'

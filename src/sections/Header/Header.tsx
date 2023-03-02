@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import { Logo } from '@components/svg/Logo'
+import { LogoSVG } from '@components/svg/LogoSVG'
 import { Container } from '@components/common/Container'
 import { Navigation } from '@components/common/Navigation'
 
@@ -9,7 +9,7 @@ export const Header: FC = () => {
 		<header>
 			<Container paddingY='py-10'>
 				<div className='flex justify-between'>
-					<Logo />
+					<LogoSVG />
 					<Navigation />
 				</div>
 			</Container>

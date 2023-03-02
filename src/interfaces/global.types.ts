@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 
-export interface IComponentWithChildren {
+export interface IFCWithChildren {
 	children: ReactNode
 }
 

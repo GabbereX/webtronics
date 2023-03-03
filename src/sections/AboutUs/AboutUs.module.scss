@@ -1,0 +1,18 @@
+.mentor_card {
+	@apply absolute w-[188px] h-[188px] pt-[188px] border-2 rounded-full
+}
+
+.description {
+	&:after {
+		content: 'Front';
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: rgba(255, 255, 255, 0.3);
+		-webkit-text-fill-color: transparent;
+		@apply absolute left-[5.47vw] bottom-4 scale-y-90
+		font-clash-display font-bold text-[14vw] leading-[9vw]
+		opacity-10
+
+		max-2xl:text-[13vw]
+		max-xl:text-[11vw] max-xl:left-[auto] max-xl:-right-4;
+	}
+}

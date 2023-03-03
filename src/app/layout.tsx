@@ -24,31 +24,31 @@ const clashDisplay = localFont({
 			weight: '400',
 			style: 'normal'
 		},
-		{
-			path: '../../public/fonts/clash-display-regular.woff',
-			weight: '400',
-			style: 'normal'
-		},
+		// {
+		// 	path: '../../public/fonts/clash-display-regular.woff',
+		// 	weight: '400',
+		// 	style: 'normal'
+		// },
 		{
 			path: '../../public/fonts/clash-display-medium.woff2',
 			weight: '500',
 			style: 'normal'
 		},
-		{
-			path: '../../public/fonts/clash-display-medium.woff',
-			weight: '500',
-			style: 'normal'
-		},
+		// {
+		// 	path: '../../public/fonts/clash-display-medium.woff',
+		// 	weight: '500',
+		// 	style: 'normal'
+		// },
 		{
 			path: '../../public/fonts/clash-display-semibold.woff2',
 			weight: '600',
 			style: 'normal'
-		},
-		{
-			path: '../../public/fonts/clash-display-semibold.woff',
-			weight: '600',
-			style: 'normal'
 		}
+		// {
+		// 	path: '../../public/fonts/clash-display-semibold.woff',
+		// 	weight: '600',
+		// 	style: 'normal'
+		// }
 	],
 	variable: '--font-clash-display'
 })

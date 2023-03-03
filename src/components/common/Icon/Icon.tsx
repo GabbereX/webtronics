@@ -1,12 +1,12 @@
 import { FC } from 'react'
 
-import { EIcons } from '@constants/icons.const'
+import { ESVG } from '@constants/svg.const'
 
 interface IProps {
-	name: EIcons
+	name: ESVG
 	className?: string
 	section?: string
-	size: [ number | string, number | string ]
+	size?: [ number | string, number | string ]
 }
 
 export const Icon: FC<IProps> = ({

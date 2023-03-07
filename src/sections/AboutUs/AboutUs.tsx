@@ -4,18 +4,19 @@ import { Container } from '@components/common/Container'
 import { Icon } from '@components/common/Icon'
 
 import { ESVG } from '@constants/svg.const'
+import { EPosition } from '@constants/global.consts'
 
-import { aboutUsDescription, mentorsOptions, TInteractiveLine } from '@constants/about-us.const'
+import { aboutUsDescription, mentorsOptions } from '@constants/about-us.const'
 
 import styles from './AboutUs.module.scss'
 
 export const AboutUs: FC = () => {
-	const renderInteractiveLine = ({ type, position }: TInteractiveLine): ReactNode => (
-		type === ESVG.CURVED_LINE
+	const renderInteractiveLine = (position: EPosition): ReactNode => (
+		position !== EPosition.CENTER
 			? (
 				<Icon
 					name={ ESVG.CURVED_LINE }
-					className={ `fill-[url(#gradient-1)] ${ position }` }
+					className={ `fill-[url(#gradient-1)] ${ styles[`mentor_card_${ position }_line`] }` }
 					size={ [ 199, 157 ] }
 				/>
 			)
@@ -29,8 +30,7 @@ export const AboutUs: FC = () => {
 
 	const renderMentorCards = (): ReactNode => (
 		mentorsOptions.map(({
-				interactiveLine,
-				photo,
+				position,
 				name,
 				description
 			}) =>
@@ -38,11 +38,11 @@ export const AboutUs: FC = () => {
 					key={ name }
 					className='relative'
 				>
-					{ renderInteractiveLine(interactiveLine) }
+					{ renderInteractiveLine(position) }
 					<span
-						className={ `${ styles.mentor_card } ${ photo.position }` }
+						className={ `${ styles.mentor_card } ${ styles[`mentor_card_${ position }`] }` }
 						style={ {
-							backgroundImage: `url(/images/mentors/mentor-${ photo.image }.webp`
+							backgroundImage: `url(/images/mentors/mentor-${ position }.webp)`
 						} }
 					>
 						<div className='py-3'>

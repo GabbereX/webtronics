@@ -1,5 +1,36 @@
 .mentor_card {
-	@apply absolute w-[188px] h-[188px] pt-[188px] border-2 rounded-full
+	@apply absolute w-[182px] h-[182px] pt-[182px] rounded-full;
+
+	&_left {
+		@apply left-[-50%];
+
+		&_line {
+			@apply translate-x-1;
+		}
+	}
+
+	&_center {
+		@apply translate-x-[-50%];
+		transform-style: preserve-3d;
+	}
+
+	&_right {
+		@apply right-[-50%];
+
+		&_line {
+			@apply scale-x-[-1] -translate-x-1;
+		}
+	}
+
+	&::after {
+		content: '';
+		width: calc(100% + 4px);
+		height: calc(100% + 4px);
+		transform: translateZ(-1em);
+
+		@apply absolute -left-0.5 -top-0.5
+		bg-gradient-1 rounded-full -z-10;
+	}
 }
 
 .description {

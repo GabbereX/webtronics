@@ -34,6 +34,7 @@ module.exports = {
 				'red': '#FD4646',
 				'gray-5': 'rgba(255, 255, 255, 0.05)',
 				'gray-20': '#636363'
+				// 'gradient-1': 'linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%)'
 			},
 			backgroundImage: {
 				'gradient-1': 'linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%)',

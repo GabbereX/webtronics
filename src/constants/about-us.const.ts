@@ -1,55 +1,26 @@
-import { ESVG } from '@constants/svg.const'
-
-export type TInteractiveLine = {
-	type: ESVG.CURVED_LINE | ESVG.STRAIGHT_LINE
-	position?: string
-}
+import { EPosition } from '@constants/global.consts'
 
 interface IMentorOption {
-	interactiveLine: TInteractiveLine
-	photo: {
-		image: 'left' | 'center' | 'right',
-		position: string
-	}
+	position: EPosition
 	name: string
 	description: string
 }
 
 export const mentorsOptions: IMentorOption[] = [
 	{
-		interactiveLine: {
-			type: ESVG.CURVED_LINE,
-			position: 'translate-x-1'
-		},
-		photo: {
-			image: 'left',
-			position: 'left-[-50%]'
-		},
+		position: EPosition.LEFT,
 		name: 'Wade Warren',
 		description: 'Front-end engineers work closely with designers'
 	},
 
 	{
-		interactiveLine: {
-			type: ESVG.STRAIGHT_LINE
-		},
-		photo: {
-			image: 'center',
-			position: 'translate-x-[-50%]'
-		},
+		position: EPosition.CENTER,
 		name: 'Kristin Watson',
 		description: 'Front-end engineers work closely with designers'
 	},
 
 	{
-		interactiveLine: {
-			type: ESVG.CURVED_LINE,
-			position: 'scale-x-[-1] -translate-x-1'
-		},
-		photo: {
-			image: 'right',
-			position: 'right-[-50%]'
-		},
+		position: EPosition.RIGHT,
 		name: 'Robert Fox',
 		description: 'Front-end engineers work closely with designers'
 	}

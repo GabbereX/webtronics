@@ -3,7 +3,8 @@ import { FC, Fragment } from 'react'
 import { Header } from '@sections/Header'
 import { Hero } from '@sections/Hero'
 import { AboutUs } from '@sections/AboutUs'
-import { LinearGradients } from '@components/common/LinearGradients'
+import { SVGHelper } from '@components/SVGHelper'
+import { Technologies } from '@sections/Technologies'
 
 const Main: FC = () => {
 	return (
@@ -12,8 +13,9 @@ const Main: FC = () => {
 			<main>
 				<Hero />
 				<AboutUs />
+				<Technologies />
 			</main>
-			<LinearGradients />
+			<SVGHelper />
 		</Fragment>
 	)
 }

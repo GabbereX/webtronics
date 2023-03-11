@@ -1,8 +1,8 @@
 import { FC } from 'react'
 
-import { Container } from '@components/common/Container'
-import { Navigation } from '@components/common/Navigation'
-import { Icon } from '@components/common/Icon'
+import { Container } from '@components/Container'
+import { Navigation } from '@components/Navigation'
+import { Icon } from '@components/Icon'
 
 import { ESVG } from '@constants/svg.const'
 

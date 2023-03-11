@@ -1,7 +1,7 @@
 import { FC, ReactNode } from 'react'
 
-import { Container } from '@components/common/Container'
-import { Icon } from '@components/common/Icon'
+import { Container } from '@components/Container'
+import { Icon } from '@components/Icon'
 
 import { ESVG } from '@constants/svg.const'
 import { EPosition } from '@constants/global.consts'

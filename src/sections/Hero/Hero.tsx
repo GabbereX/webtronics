@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Container } from '@components/common/Container'
+import { Container } from '@components/Container'
 
 export const Hero: FC = () => {
 	return (

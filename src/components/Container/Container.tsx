@@ -14,7 +14,7 @@ export const Container: FC<IProps> = ({
 }) => {
 	return (
 		<div className={ `container ${ classes }` }>
-			{ title && <h2 className='text-center'>{ title }</h2> }
+			{ title && <h2 className='text-center whitespace-pre'>{ title }</h2> }
 			{ children }
 		</div>
 	)

@@ -9,12 +9,12 @@ export const Technologies: FC = () => {
 				title={ `Programming\ntechnologies` }
 				classes='py-19 flex flex-col items-center'
 			>
-				<p className='max-w-[432px] text-center'>
+				<p className='max-w-[432px] text-center mb-6'>
 					By the end, you’ll have the portfolio and interview skills you need to start your new career.
 				</p>
 
 				<div>
-					<CardWrapper />
+					<CardWrapper isCanvas />
 				</div>
 			</Container>
 		</section>

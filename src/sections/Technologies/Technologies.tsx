@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import { Container } from '@components/Container'
 import { CardWrapper } from '@components/CardRoot'
+import { ESubstractSVG } from '@constants/svg.const'
 
 export const Technologies: FC = () => {
 	return (
@@ -14,7 +15,12 @@ export const Technologies: FC = () => {
 				</p>
 
 				<div>
-					<CardWrapper />
+					<CardWrapper
+						substract={ ESubstractSVG.TEXHNOLOGY }
+						backgroundRevert
+					>
+						Content
+					</CardWrapper>
 				</div>
 			</Container>
 		</section>

@@ -14,7 +14,7 @@ export const Technologies: FC = () => {
 				</p>
 
 				<div>
-					<CardWrapper isCanvas />
+					<CardWrapper />
 				</div>
 			</Container>
 		</section>

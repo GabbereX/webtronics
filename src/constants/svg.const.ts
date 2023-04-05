@@ -6,5 +6,6 @@ export const enum ESVG {
 
 export const enum ESubstractSVG {
 	COMMON = 'common',
-	TEXHNOLOGY = 'technology'
+	TEXHNOLOGY = 'technology',
+	FAQ = 'faq'
 }

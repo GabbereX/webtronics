@@ -3,8 +3,8 @@
 .CardWrapper {
 	position: relative;
 
-	width: 181px;
-	height: 230px;
+	//width: 181px;
+	//height: 230px;
 
 	&-Container, &-Content {
 		width: 100%;
@@ -26,26 +26,31 @@
 		background-clip: padding-box;
 		background-size: contain;
 
+		mask-composite: exclude;
+		mask-size: contain;
+		mask-repeat: no-repeat;
+
 		&_backgroundRevert {
 			@apply bg-gradient-1-revert;
 		}
-
-		//opacity: 0.7;
-
-		z-index: -1;
 
 		&_substract {
 			&_common {
 				mask-image: linear-gradient(white, white), linear-gradient(white, white);
 				mask-clip: content-box, no-clip;
-				mask-composite: exclude;
 			}
 
 			&_technology {
 				mask-image: url(/images/svg/card-wrappers/substract-technology.svg);
-				mask-composite: exclude;
+			}
+
+			&_faq {
+				mask-image: url(/images/svg/card-wrappers/substract-faq.svg);
+				mask-size: 100%, 100%;
 			}
 		}
+
+		z-index: -1;
 	}
 
 	&-Content {
@@ -57,7 +62,11 @@
 
 		&_substract {
 			&_technology {
-				clip-path: url(#clip-path-card-wrapper);
+				clip-path: url(#clip-path-card-wrapper-technology);
+			}
+
+			&_faq {
+				clip-path: url(#clip-path-card-wrapper-faq);
 			}
 		}
 	}

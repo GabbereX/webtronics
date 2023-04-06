@@ -1,10 +1,6 @@
-// Ультра новое решение
 
 .CardWrapper {
 	position: relative;
-
-	//width: 181px;
-	//height: 230px;
 
 	&-Container, &-Content {
 		width: 100%;
@@ -37,16 +33,16 @@
 		&_substract {
 			&_common {
 				mask-image: linear-gradient(white, white), linear-gradient(white, white);
-				mask-clip: content-box, no-clip;
+				mask-clip: content-box, padding-box;
 			}
 
 			&_technology {
-				mask-image: url(/images/svg/card-wrappers/substract-technology.svg);
+				mask-image: url(./substracts/substract-technology.svg);
 			}
 
 			&_faq {
-				mask-image: url(/images/svg/card-wrappers/substract-faq.svg);
-				mask-size: 100%, 100%;
+				mask-image: url(./substracts/substract-faq.svg);
+				mask-size: 100% 100%;
 			}
 		}
 
@@ -71,218 +67,3 @@
 		}
 	}
 }
-
-// Новое решение
-
-//.CardWrapper {
-//	width: 180px;
-//	height: 230px;
-//
-//	position: relative;
-//	border-radius: 4px;
-//
-//	&:after {
-//		content: '';
-//		position: absolute;
-//		top: 0;
-//		left: 0;
-//		right: 0;
-//		bottom: 0;
-//		background: linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%) no-repeat;
-//		clip-path: url(#clip-path-card-wrapper);
-//		border: 1px solid transparent;
-//		padding: 2px;
-//		mask: linear-gradient(white, white) padding-box, linear-gradient(white, white);
-//		mask-composite: exclude;
-//
-//		z-index: -1;
-//	}
-//}
-
-// Еще одно решение
-
-//.border-mask {
-//	background: linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%) border-box no-repeat;
-//
-//	mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
-//	mask-composite: exclude;
-//}
-//
-//.CardWrapper {
-//	position: relative;
-//	width: 180px;
-//	height: 230px;
-//
-//	// Border
-//
-//	&-Border {
-//		z-index: -1;
-//
-//		&-Container {
-//
-//			background: linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%) border-box no-repeat;
-//
-//			//mask: linear-gradient(white, white), linear-gradient(white, white);
-//			//mask-composite: exclude;
-//
-//			& > span {
-//				position: absolute;
-//
-//				border-style: solid;
-//				border-color: transparent;
-//
-//			}
-//
-//		}
-//
-//		&_top {
-//			left: 0;
-//			top: 0;
-//			width: 100%;
-//			border-top: 1px;
-//
-//		}
-//
-//		&_bottom {
-//			left: 0;
-//			bottom: 0;
-//			width: 100%;
-//			border-bottom: 1px;
-//		}
-//
-//		&_right {
-//			right: 0;
-//			bottom: 0;
-//			height: 100%;
-//			border-right: 1px;
-//		}
-//
-//		&_left {
-//			left: 0;
-//			bottom: 0;
-//			height: 100%;
-//			border-left: 1px;
-//		}
-//
-//		&_rightBorrom {
-//
-//		}
-//
-//		&_leftTop {
-//
-//		}
-//	}
-//
-//	// Content
-//
-//	&-Content {
-//		display: flex;
-//		justify-content: center;
-//		align-items: center;
-//		height: 100%;
-//	}
-//}
-
-// Старое решение
-
-////.wrapper {
-////	width: 180px;
-////	height: 230px;
-////	//clip-path: url(#clip-path-card-wrapper);
-////	//shape-outside: ellipse(40% 50%);
-////	//padding: 1px;
-////
-////	//@apply bg-gradient-1;
-////
-////	background: linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%) border-box;
-////
-////	mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
-////	//mask-image: url(/substract.svg);
-////	//mask-size: 100% 100%;
-////	//mask-position: center;
-////	//mask-repeat: no-repeat;
-////	mask-composite: exclude;
-////	-webkit-mask-composite: xor;
-////}
-////
-////.root {
-////	padding: 1px;
-////	height: 100%;
-////	//background: #000;
-////
-////	//clip-path: url(#clip-path-card-wrapper);
-////}
-//
-//.wrapper {
-//	width: 180px;
-//	height: 230px;
-//
-//	border: 1px solid transparent;
-//	border-radius: 16px;
-//
-//	background: linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%) border-box;
-//
-//	mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
-//	//mask-image: url(/substract.svg);
-//	mask-border: 25 / 35px / 12px space alpha;
-//	mask-border-slice: 10% 30% 10% 10%;
-//	mask-border-source: linear-gradient(to top, red, yellow);
-//	mask-border-width: 2px;
-//	mask-border-outset: 1rem;
-//	mask-composite: add;
-//	mask-position: center;
-//	//mask-size: 100% 100%;
-//	//presentation-level: increment;
-//	//mask-position: center;
-//	mask-repeat: no-repeat;
-//	//mask-border: url(/substract.svg) 25 / 35px / 12px space alpha;
-//	//mask-border-outset: 1.5;
-//	//clip-path: url(#clip-path-card-wrapper);
-//	//mask-border-source: unset;
-//
-//	//-webkit-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white);
-//	//-webkit-mask-composite: exclude;
-//	//-webkit-mask-composite: xor;
-//}
-//
-//.root {
-//	display: flex;
-//	justify-content: center;
-//	align-items: center;
-//
-//	// padding: 1;
-//
-//	height: 100%;
-//}
-
-//.wrapper {
-//	position: relative;
-//	width: 180px;
-//	height: 230px;
-//
-//	@apply bg-gradient-1;
-//
-//	border-top: 1px solid transparent;
-//	border-bottom: 1px solid transparent;
-//
-//	border-radius: 16px;
-//
-//	//mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
-//	//mask-composite: exclude;
-//
-//	&:after {
-//		content: '';
-//		position: absolute;
-//		@apply bg-gradient-1;
-//		width: 100%;
-//		height: 100%;
-//		border-right: 1px solid transparent;
-//		border-left: 1px solid transparent;
-//		right: 0;
-//		top: 0;
-//		mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
-//		mask-composite: exclude;
-//		z-index: 2;
-//	}
-//
-//}

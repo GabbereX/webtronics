@@ -32,16 +32,6 @@ export const Technologies: FC = () => {
 						Content
 					</CardWrapper>
 				</div>
-
-
-				<div className='mb-6'>
-					<CardWrapper
-						classes='w-[181px] h-[230px]'
-						substract={ ESubstractSVG.COMMON }
-					>
-						Content
-					</CardWrapper>
-				</div>
 			</Container>
 		</section>
 	)

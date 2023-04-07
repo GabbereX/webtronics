@@ -1,69 +1,108 @@
+$faq-skew: url(./substracts/substracr-faq-skew.svg);
+$faq-round-left: url(./substracts/substracr-faq-skew-round-left.svg);
+$faq-round-right: url(./substracts/substracr-faq-skew-round-right.svg);
+$faq-line: url(./substracts/substracr-faq-line.svg);
+
 
 .CardWrapper {
-	position: relative;
+  position: relative;
 
-	&-Container, &-Content {
-		width: 100%;
-		height: 100%;
+  &-Container, &-Content {
+    width: 100%;
+    height: 100%;
 
-		&_substract {
-			&_common {
-				border-radius: 16px;
-			}
-		}
-	}
+    &_substract {
+      &_common {
+        border-radius: 16px;
+      }
+    }
+  }
 
-	&-Container {
-		position: absolute;
-		inset: 0 0 0 0;
-		padding: 1px;
+  &-Container {
+    position: absolute;
+    inset: 0 0 0 0;
+    padding: 1px;
 
-		@apply bg-gradient-1;
-		background-clip: padding-box;
-		background-size: contain;
+    @apply bg-gradient-1;
+    background-clip: padding-box;
+    background-size: contain;
 
-		mask-composite: exclude;
-		mask-size: contain;
-		mask-repeat: no-repeat;
+    mask-composite: exclude;
+    mask-size: contain;
+    mask-repeat: no-repeat;
 
-		&_backgroundRevert {
-			@apply bg-gradient-1-revert;
-		}
+    &_backgroundRevert {
+      @apply bg-gradient-1-revert;
+    }
 
-		&_substract {
-			&_common {
-				mask-image: linear-gradient(white, white), linear-gradient(white, white);
-				mask-clip: content-box, padding-box;
-			}
+    &_substract {
+      &_common {
+        mask-image: linear-gradient(white, white), linear-gradient(white, white);
+        mask-clip: content-box, padding-box;
+      }
 
-			&_technology {
-				mask-image: url(./substracts/substract-technology.svg);
-			}
+      &_technology {
+        mask-image: url(./substracts/substract-technology.svg);
+      }
 
-			&_faq {
-				mask-image: url(./substracts/substract-faq.svg);
-				mask-size: 100% 100%;
-			}
-		}
+      &_faq {
+        padding: 0;
 
-		z-index: -1;
-	}
+        mask-image: $faq-skew,
+        $faq-line,
+        $faq-round-right,
+        $faq-line,
+        $faq-skew,
+        $faq-line,
+        $faq-round-left,
+        $faq-line;
 
-	&-Content {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+        mask-position: top left,
+        28px 0,
+        top right,
+        100% 8px,
+        bottom right,
+        8px 100%,
+        bottom left,
+        0 28px;
 
-		@apply bg-gray-5;
+        mask-size: auto,
+        calc(100% - 36px) 1px,
+        auto,
+        1px calc(100% - 36px),
+        auto,
+        calc(100% - 36px) 1px,
+        auto,
+        1px calc(100% - 36px);
+      }
+    }
 
-		&_substract {
-			&_technology {
-				clip-path: url(#clip-path-card-wrapper-technology);
-			}
+    z-index: -1;
+  }
 
-			&_faq {
-				clip-path: url(#clip-path-card-wrapper-faq);
-			}
-		}
-	}
+  &-Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @apply bg-gray-5;
+
+    &_substract {
+      &_technology {
+        clip-path: url(#clip-path-card-wrapper-technology);
+      }
+
+      &_faq {
+        border-radius: 8px;
+        clip-path: polygon(
+                        28px 0%,
+                        100% 0,
+                        100% calc(100% - 28px),
+                        calc(100% - 28px) 100%,
+                        0% 100%,
+                        0% 28px
+        );
+      }
+    }
+  }
 }

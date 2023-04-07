@@ -1,0 +1,18 @@
+<svg width="703" height="62" viewBox="0 0 703 62" fill="none" xmlns="http://www.w3.org/2000/svg"
+     preserveAspectRatio="none" stroke="red">
+    <style type="text/css">
+        #LBC, #RBC, #RTC, #LTC{position: absolute, left: 0}
+    </style>
+    <path id="LBC" transform="scale(1, 1)"
+          d="M8,61.5c-4.1,0-7.5-3.4-7.5-7.5"/>
+    <path id="RBC" transform="scale(1, 1)" d="M702.7,35L673,61.7"/>
+    <path id="RTC" transform="scale(1, 1)"
+          d="M695,0.5c4.1,0,7.5,3.4,7.5,7.5"/>
+    <path id="LTC" transform="scale(1, 1)" d="M0.4,27.9L27,0.2"/>
+
+
+    <path id="LLine" vector-effect="non-scaling-stroke" d="M0.5,54V27.5"/>
+    <path id="RLine" vector-effect="non-scaling-stroke" d="M702.5,8v27.4"/>
+    <path id="TLine" vector-effect="non-scaling-stroke" d="M26.9,0.5H695"/>
+    <path id="BLine" vector-effect="non-scaling-stroke" d="M673.2,61.5H8"/>
+</svg>
